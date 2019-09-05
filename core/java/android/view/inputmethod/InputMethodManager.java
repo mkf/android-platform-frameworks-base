@@ -824,7 +824,7 @@ public final class InputMethodManager {
      * @param hideFlags Provides additional operating flags.  May be
      * 0 or have the {@link #HIDE_IMPLICIT_ONLY},
      * {@link #HIDE_NOT_ALWAYS} bit set.
-     **/
+     */
     public void toggleSoftInputFromWindow(IBinder windowToken, int showFlags, int hideFlags) {
         synchronized (mH) {
             if (mServedView == null || mServedView.getWindowToken() != windowToken) {
